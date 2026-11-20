@@ -1,0 +1,31 @@
+<!doctype html><html dir="rtl"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Cairo:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:Cairo}
+.bg{position:absolute;inset:0;background:url(bg/{{bg}}) center/cover}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,{{shade}} 0%,rgba(0,0,0,0) 38%,rgba(0,0,0,0) 72%,rgba(0,0,0,.55) 100%)}
+.logo{position:absolute;left:38px;top:34px;width:245px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+.txt{position:absolute;right:52px;top:40px;text-align:right;width:720px}
+.kick{display:inline-block;background:#c8161d;color:#fff;font-weight:900;font-size:30px;padding:8px 26px;border-radius:40px;box-shadow:0 4px 0 #7a0c10}
+.h1{font-family:Lalezar;font-size:{{s1}}px;line-height:1.08;color:{{c1}};margin-top:12px;text-shadow:0 5px 0 {{st}},0 10px 24px rgba(0,0,0,.45)}
+.h2{font-family:Lalezar;font-size:{{s2}}px;line-height:1.05;color:{{c2}};text-shadow:0 5px 0 {{st}},0 10px 24px rgba(0,0,0,.45)}
+.sub{display:inline-block;margin-top:18px;background:#fff8e7;color:#3b2412;font-weight:800;font-size:31px;padding:10px 28px;border-radius:40px;border:4px solid #e9b949}
+.cards{position:absolute;bottom:30px;left:30px;right:30px;display:flex;gap:20px}
+.card{flex:1;background:rgba(255,248,231,.96);border:3px solid #e9b949;border-radius:26px;padding:34px 22px 16px;position:relative}
+.card .lbl{position:absolute;top:-22px;right:22px;background:#c8161d;color:#fff;font-weight:900;font-size:25px;padding:3px 18px;border-radius:14px}
+.row{display:flex;align-items:center;gap:12px;color:#3b2412;font-weight:800;font-size:21px;margin:6px 0}
+.row.ph{color:#c8161d;font-size:23px;font-weight:900;direction:ltr;justify-content:flex-end}
+.ic{width:34px;height:34px;border-radius:50%;background:#f2c94c;flex:none;display:flex;align-items:center;justify-content:center;font-size:17px}
+.tag{position:absolute;top:950px;font-family:Lalezar;font-size:62px;color:#fff;background:#111;padding:0 30px;border-radius:20px;border:5px solid #fff;transform:rotate(-4deg);box-shadow:0 8px 0 rgba(0,0,0,.35)}</style></head><body>
+<div class="bg"></div><div class="shade"></div>
+<img class="logo" src="logo.png">
+<div class="txt"><div class="kick">{{kick}}</div><div class="h1">{{h1}}</div><div class="h2">{{h2}}</div><div class="sub">{{sub}}</div></div>
+{{extra}}<div class="cards">
+<div class="card"><div class="lbl">شركة أرض السنبلة الذهبية</div>
+<div class="row"><span class="ic">📍</span>الناصرية – الواحة، قرب مصفى ذي قار</div>
+<div class="row ph">07801392063 – 07706848008<span class="ic">📞</span></div></div>
+<div class="card"><div class="lbl">المعجنات</div>
+<div class="row"><span class="ic">📍</span>الناصرية – فلكة السماوة، مجاور مستشفى الأسنان</div>
+<div class="row ph">07801080100 – 07801080200<span class="ic">📞</span></div></div>
+</div></body></html>
